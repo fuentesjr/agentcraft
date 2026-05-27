@@ -19,12 +19,13 @@ Some ideas will be rough. Some will be tested. Some will turn into repeatable pl
 This repo is a mix of:
 
 - Exploratory ideas
+- Proposals and v0 plans for ideas being shaped
 - Experiments and results
 - Reusable patterns
 - Playbooks and templates
 - Notes on what works, what does not, and when
 
-The most reusable material should eventually live in `patterns/`, `playbooks/`, and `templates/`. Earlier-stage thinking belongs in `ideas/` and `experiments/`.
+The most reusable material should eventually live in `patterns/`, `playbooks/`, and `templates/`. Earlier-stage thinking belongs in `ideas/`, `proposals/`, and `experiments/`.
 
 ## How ideas evolve
 
@@ -33,10 +34,10 @@ The goal is not to collect clever prompts. The goal is to understand which syste
 A typical idea may move through:
 
 ```text
-ideas/ → experiments/ → patterns/ → playbooks/
+ideas/ → proposals/ → experiments/ → patterns/ → playbooks/
 ```
 
-Not everything graduates. Failed experiments are useful when they explain what was tried, what happened, and what changed as a result.
+`proposals/` is for canonical plans that are more mature than raw ideas but not necessarily ready to become standalone repositories. Not everything graduates. Failed experiments are useful when they explain what was tried, what happened, and what changed as a result.
 
 ## Areas I care about
 
@@ -54,12 +55,13 @@ A few recurring themes in this repo:
 This repo is intentionally a mix of rough and refined material:
 
 - `ideas/` contains early-stage questions, bets, and concepts.
-- `experiments/` contains tests, results, and reflections.
+- `proposals/` contains canonical plans for ideas being shaped into concrete experiments, tools, or systems.
+- `experiments/` contains bounded tests, results, and reflections.
 - `patterns/` contains distilled workflows and system designs.
 - `playbooks/` contains practical operating guides.
 - `templates/` contains reusable prompts, checklists, and scaffolding.
 
-If you want the most polished material, start with `patterns/` and `playbooks/`. If you want to see the thinking process, start with `ideas/` and `experiments/`.
+If you want the most polished material, start with `patterns/` and `playbooks/`. If you want to see the thinking process, start with `ideas/`, `proposals/`, and `experiments/`.
 
 ## Working structure
 
@@ -67,7 +69,8 @@ If you want the most polished material, start with `patterns/` and `playbooks/`.
 agentcraft/
 ├── README.md
 ├── ideas/          # Raw concepts, questions, and bets
-├── experiments/    # Tests, results, and reflections
+├── proposals/      # Canonical plans for ideas being shaped
+├── experiments/    # Bounded tests, results, and reflections
 ├── patterns/       # Repeatable workflows and system designs
 ├── playbooks/      # Practical operating guides
 └── templates/      # Prompts, checklists, and scaffolds
