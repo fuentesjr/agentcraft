@@ -8,6 +8,21 @@ Agentcraft is a public lab notebook for developing practical strategies, workflo
 
 The goal is not to collect clever prompts. The goal is to understand which systems reliably improve judgment, focus, and execution.
 
+## Agentcraft Field Guide
+
+Agentcraft has an active publishing direction: the Agentcraft Field Guide, a GitHub-hosted/static-site layer for durable AI cheatsheets, playbooks, guides, patterns, and templates.
+
+Preserve this distinction:
+
+- **Agentcraft** is the lab notebook and workshop: rough ideas, proposals, experiments, failures, and evolving notes.
+- **Field Guide** is the curated reference and publishing layer: durable material worth revisiting or sharing.
+
+Do not make rough notes site-ready by default. Publishing should be an explicit promotion step, not ambient pressure on every document.
+
+Markdown should remain the canonical source. A static website is the rendered view, not the primary authoring format. Prefer boring Markdown/GitHub Pages-style publishing unless asked otherwise, and avoid one-off AI-generated HTML pages as the core architecture.
+
+Treat `proposals/agentcraft-field-guide.md` as the canonical active plan for the Field Guide. The original idea note at `ideas/agentcraft-field-guide.md` is historical context.
+
 ## Operating principles
 
 - Prefer simple, practical systems over elaborate frameworks.
