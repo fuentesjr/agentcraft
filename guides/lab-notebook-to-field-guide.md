@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: From Lab Notebook to Field Guide
 published: true
 type: guide

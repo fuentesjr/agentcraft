@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Cheatsheets
 summary: Fast references for practical AI workflows, prompts, commands, and concepts.
 ---

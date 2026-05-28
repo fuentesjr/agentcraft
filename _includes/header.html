@@ -1,0 +1,38 @@
+<header class="dash-top">
+  <a class="dash-top__brand" href="{{ '/' | relative_url }}">
+    <div class="dash-logo">◉</div>
+    <div>
+      <div class="dash-top__name">{{ site.title }}</div>
+      <div class="dash-top__sub">
+        <span class="status-dot" style="--dot: var(--ok)"><span class="status-dot__inner"></span></span>
+        <span>{{ site.tagline }}</span>
+        <span class="dash-sep">/</span>
+        <span>{{ site.author.location }}</span>
+      </div>
+    </div>
+  </a>
+  <div class="dash-top__right">
+    <div class="dash-kv">
+      <span class="dash-kv__k">source</span>
+      <span class="dash-kv__v">markdown</span>
+    </div>
+    <div class="dash-kv">
+      <span class="dash-kv__k">stage</span>
+      <span class="dash-kv__v">field-guide</span>
+    </div>
+  </div>
+</header>
+
+<nav class="dash-nav" aria-label="Primary">
+  <div class="dash-nav__links">
+    <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>home</a>
+    <a href="{{ '/cheatsheets/' | relative_url }}"{% if page.url contains '/cheatsheets' %} class="is-active"{% endif %}>cheatsheets</a>
+    <a href="{{ '/playbooks/' | relative_url }}"{% if page.url contains '/playbooks' %} class="is-active"{% endif %}>playbooks</a>
+    <a href="{{ '/guides/' | relative_url }}"{% if page.url contains '/guides' %} class="is-active"{% endif %}>guides</a>
+    <a href="{{ '/patterns/' | relative_url }}"{% if page.url contains '/patterns' %} class="is-active"{% endif %}>patterns</a>
+    <a href="{{ '/templates/' | relative_url }}"{% if page.url contains '/templates' %} class="is-active"{% endif %}>templates</a>
+  </div>
+  <div class="dash-nav__crumb">
+    field-guide &rsaquo; <code>{{ page.url | default: '/' | replace: '/', ' / ' | strip }}</code>
+  </div>
+</nav>

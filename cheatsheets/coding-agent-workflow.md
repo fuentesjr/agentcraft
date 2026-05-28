@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Coding Agent Workflow Cheatsheet
 type: cheatsheet
 status: usable

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Playbooks
 summary: Repeatable operating procedures for practical AI work.
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Patterns
 summary: Reusable AI workflow and system-design patterns.
 ---

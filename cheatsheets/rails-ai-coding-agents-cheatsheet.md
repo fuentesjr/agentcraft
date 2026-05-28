@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Rails AI Coding Agents Cheatsheet
 type: cheatsheet
 status: usable

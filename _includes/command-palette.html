@@ -1,0 +1,44 @@
+{% if site.uptime.show_command_palette != false %}
+<div id="cmdk" class="cmdk-overlay" hidden role="dialog" aria-label="Command palette">
+  <div class="cmdk" role="document">
+    <div class="cmdk__header">
+      <span class="cmdk__prompt">›</span>
+      <input type="text" class="cmdk__input" placeholder="Type a command or search…" aria-label="Search commands">
+      <span class="cmdk__esc">esc</span>
+    </div>
+    <div class="cmdk__list" role="listbox"></div>
+    <div class="cmdk__footer">
+      <span>↑↓ navigate</span>
+      <span>↵ select</span>
+      <span>esc close</span>
+    </div>
+  </div>
+</div>
+
+<div id="help-overlay" class="help-overlay" hidden role="dialog" aria-label="Keyboard shortcuts">
+  <div class="help" role="document">
+    <div class="help__title">Keyboard</div>
+    <dl class="help__list">
+      <div><dt><kbd>⌘K</kbd> / <kbd>Ctrl K</kbd></dt><dd>Command palette</dd></div>
+      <div><dt><kbd>T</kbd></dt><dd>Toggle theme</dd></div>
+      <div><dt><kbd>D</kbd></dt><dd>Cycle density</dd></div>
+      <div><dt><kbd>?</kbd></dt><dd>This overlay</dd></div>
+      <div><dt><kbd>G</kbd> <kbd>H</kbd></dt><dd>Home</dd></div>
+      <div><dt><kbd>Esc</kbd></dt><dd>Close anything</dd></div>
+    </dl>
+    <div class="help__foot">{{ site.uptime.footer_note }}</div>
+  </div>
+</div>
+
+{% assign guide_pages = site.pages | where: "published", true | sort: "title" %}
+<script id="cmdk-data" type="application/json">
+{
+  "posts": [
+    {% for item in guide_pages %}
+    {"title": {{ item.title | jsonify }}, "url": {{ item.url | relative_url | jsonify }}, "date": {{ item.type | default: "page" | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "tags": []
+}
+</script>
+{% endif %}

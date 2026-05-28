@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Templates
 summary: Reusable prompts, checklists, scaffolds, and supporting material.
 ---

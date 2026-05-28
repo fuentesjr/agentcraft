@@ -1,9 +1,36 @@
 title: Agentcraft Field Guide
+tagline: Practical AI systems, not automation theater.
 description: Practical AI cheatsheets, playbooks, guides, patterns, and templates from Agentcraft.
 url: https://fuentesjr.github.io
 baseurl: /agentcraft
+remote_theme: fuentesjr/jekyll-theme-uptime
 permalink: pretty
 markdown: kramdown
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: Agentcraft
+  title: field guide
+  location: GitHub Pages
+
+uptime:
+  accent_hue: 55
+  default_theme: dark
+  default_density: comfortable
+  show_command_palette: true
+  footer_note: "Agentcraft is the lab notebook. The Field Guide is the curated shelf."
+  career_start: "2026-05-28"
+  region_label: "github-pages"
+
+social_links:
+  - kind: github
+    label: fuentesjr/agentcraft
+    href: https://github.com/fuentesjr/agentcraft
 
 exclude:
   - AGENTS.md

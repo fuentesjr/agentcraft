@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Guides
 summary: Practical explanations of AI workflows, systems, and operating principles.
 ---
