@@ -34,21 +34,24 @@ Treat `proposals/agentcraft-field-guide.md` as the canonical active plan for the
 
 ## Repository map
 
+- `cheatsheets/` — fast references for commands, concepts, prompts, and workflows.
+- `guides/` — explanatory and practical docs.
 - `ideas/` — raw concepts, questions, bets, and early sketches.
 - `proposals/` — canonical plans for ideas being shaped into concrete experiments, tools, or systems.
 - `experiments/` — bounded tests, results, and reflections.
 - `patterns/` — distilled workflows and system designs that appear reusable.
 - `playbooks/` — practical operating guides for repeatable workflows.
 - `templates/` — reusable prompts, checklists, scaffolds, and supporting materials.
+- `index.md`, `_config.yml`, `_layouts/`, `assets/` — minimal GitHub Pages / Jekyll Field Guide scaffold.
 
-Before editing, read `README.md` and the `README.md` in the relevant directory.
+Before editing, read `README.md` and the `README.md` or `index.md` in the relevant directory.
 
 ## Where new content belongs
 
 Use the maturity of the work to choose a location:
 
 ```text
-ideas/ → proposals/ → experiments/ → patterns/ → playbooks/
+ideas/ → proposals/ → experiments/ → patterns/playbooks/guides/cheatsheets/templates → Field Guide navigation
 ```
 
 Not everything needs to graduate. Failed experiments are useful when they explain what was tried, what happened, and what changed as a result.
@@ -92,8 +95,8 @@ Templates should say when to use them and what inputs they expect.
 
 ## Operational guidance
 
-- This repo currently has no build, test, or formatter harness.
-- For Markdown-only changes, verify headings, links, and examples manually; run targeted checks only when useful.
+- For Field Guide/site changes, verify the Jekyll build with `jekyll build --destination /tmp/agentcraft-field-guide-site`.
+- For Markdown-only lab-notebook changes, verify headings, links, and examples manually; run targeted checks only when useful.
 - Do not add dependencies, formatters, generated artifacts, or automation unless explicitly asked.
 - Do not commit, push, open PRs, delete or rename non-generated files, or change config outside the repo unless explicitly asked.
 - For multi-file, structural, or cross-cutting changes, propose the plan before editing. Local single-file changes can proceed directly.

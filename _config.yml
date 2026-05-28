@@ -1,0 +1,17 @@
+title: Agentcraft Field Guide
+description: Practical AI cheatsheets, playbooks, guides, patterns, and templates from Agentcraft.
+url: https://fuentesjr.github.io
+baseurl: /agentcraft
+permalink: pretty
+markdown: kramdown
+
+exclude:
+  - AGENTS.md
+  - README.md
+  - implementation-notes.md
+  - ideas/
+  - proposals/
+  - experiments/
+  - patterns/README.md
+  - playbooks/README.md
+  - templates/README.md

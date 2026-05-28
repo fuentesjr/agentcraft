@@ -2,7 +2,9 @@
 
 A public lab notebook for developing practical strategies, workflows, and systems for working with AI agents.
 
-This repository collects my experiments, patterns, playbooks, and reflections on AI engineering — especially the parts that sit between raw model capability and real-world usefulness: context design, review loops, orchestration, human-in-the-loop workflows, and agentic system design.
+This repository collects my experiments, patterns, playbooks, guides, cheatsheets, and reflections on AI engineering — especially the parts that sit between raw model capability and real-world usefulness: context design, review loops, orchestration, human-in-the-loop workflows, and agentic system design.
+
+It also hosts the **Agentcraft Field Guide**: a Markdown-first, GitHub Pages publishing layer for the most durable and reusable material.
 
 ## Why this exists
 
@@ -23,9 +25,23 @@ This repo is a mix of:
 - Experiments and results
 - Reusable patterns
 - Playbooks and templates
+- Cheatsheets and guides
 - Notes on what works, what does not, and when
 
-The most reusable material should eventually live in `patterns/`, `playbooks/`, and `templates/`. Earlier-stage thinking belongs in `ideas/`, `proposals/`, and `experiments/`.
+The most reusable material should eventually live in `cheatsheets/`, `guides/`, `patterns/`, `playbooks/`, and `templates/`. Earlier-stage thinking belongs in `ideas/`, `proposals/`, and `experiments/`.
+
+## Agentcraft Field Guide
+
+Agentcraft is the workshop: rough ideas, proposals, experiments, failures, and evolving notes.
+
+The Field Guide is the shelf: durable cheatsheets, playbooks, guides, patterns, and templates that are useful enough to revisit, reuse, or share.
+
+```text
+Agentcraft = where thinking happens
+Field Guide = where durable lessons are surfaced
+```
+
+Publishing is an explicit promotion step. Rough notes do not need to be site-ready by default.
 
 ## How ideas evolve
 
@@ -34,7 +50,7 @@ The goal is not to collect clever prompts. The goal is to understand which syste
 A typical idea may move through:
 
 ```text
-ideas/ → proposals/ → experiments/ → patterns/ → playbooks/
+ideas/ → proposals/ → experiments/ → patterns/playbooks/guides/cheatsheets/templates → Field Guide navigation
 ```
 
 `proposals/` is for canonical plans that are more mature than raw ideas but not necessarily ready to become standalone repositories. Not everything graduates. Failed experiments are useful when they explain what was tried, what happened, and what changed as a result.
@@ -57,17 +73,31 @@ This repo is intentionally a mix of rough and refined material:
 - `ideas/` contains early-stage questions, bets, and concepts.
 - `proposals/` contains canonical plans for ideas being shaped into concrete experiments, tools, or systems.
 - `experiments/` contains bounded tests, results, and reflections.
+- `cheatsheets/` contains fast references for commands, concepts, prompts, and workflows.
+- `guides/` contains explanatory and practical docs.
 - `patterns/` contains distilled workflows and system designs.
 - `playbooks/` contains practical operating guides.
 - `templates/` contains reusable prompts, checklists, and scaffolding.
 
-If you want the most polished material, start with `patterns/` and `playbooks/`. If you want to see the thinking process, start with `ideas/`, `proposals/`, and `experiments/`.
+If you want the most polished material, start with the Field Guide homepage, `cheatsheets/`, `guides/`, `patterns/`, and `playbooks/`. If you want to see the thinking process, start with `ideas/`, `proposals/`, and `experiments/`.
+
+## Local site check
+
+The Field Guide is a small Jekyll/GitHub Pages site. To verify the rendered site locally without writing generated files into the repo:
+
+```bash
+jekyll build --destination /tmp/agentcraft-field-guide-site
+```
 
 ## Working structure
 
 ```text
 agentcraft/
 ├── README.md
+├── index.md        # Field Guide homepage
+├── _config.yml     # GitHub Pages / Jekyll config
+├── cheatsheets/    # Fast references
+├── guides/         # Explanatory and practical docs
 ├── ideas/          # Raw concepts, questions, and bets
 ├── proposals/      # Canonical plans for ideas being shaped
 ├── experiments/    # Bounded tests, results, and reflections
